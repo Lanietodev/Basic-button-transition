@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* CSS goes here */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.transition-button {
+  background-color: blue; /* Define the initial state */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition-property: background-color; /* Only transition background color */
+  transition-duration: 0.5s; /* Transition duration of 0.5 seconds */
+  transition-timing-function: ease; /* Transition timing function (easing) */
+
+}
+.transition-button:hover {
+  background-color: red; /* Change background color to red on hover */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- Select a button element -->
+<button class="transition-button">Hover Me</button>
+
+</body>
+</html>
